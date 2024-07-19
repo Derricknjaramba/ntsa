@@ -47,7 +47,15 @@
                 <a href="#" class="text-yellow-600 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
                 <a href="#" class="text-yellow-600 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Up for Sale</a>
                 <a href="#" class="text-yellow-600 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Dashboard</a>
-               <button type="button" id="mton">LOG-in</button> 
+                <form id="searchForm" onsubmit="searchVehicleTypes(event)">
+                  <label for="makeInput">Enter Make:</label>
+                  <input type="text" id="makeInput" required>
+                  <button type="submit">Search</button>
+                </form>
+                <div id="results">
+                  <!-- Results will be displayed here -->
+                </div>
+              
               </div>
      
         <div id="vehicleTypes"></div>
